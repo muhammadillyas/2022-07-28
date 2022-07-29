@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zakat Calculate</title>
+    <link rel="stylesheet" href="zakat.css">
+</head>
+<body class="h1">
+
+    <h1>Zakat Calculate of goold and silver abd cash</h1>
+
+    <p>gold in Tola </p>
+
+    <input type="number" id="gold" placeholder="Enter Your gold"><br><p>Silver in Tola</p>
+    <input type="number" id="silver" placeholder="Enter Your silver"><br><p>Total Amount</p>
+    <input type="number" id="cash" placeholder="Enter Your cash"><br>
+    <button onclick="
+    let gold=document.getElementById('gold').value;
+    let goldAmount=gold*130000;
+
+    let silver=document.getElementById('silver').value;
+    let silvarAmount=silver*1500;
+
+    let amount=document.getElementById('cash').value;
+    
+    let goldAmountD= goldAmount /40;
+    let silverAmountD= silvarAmount /40;
+    let cashD= amount /40;
+    let totalZakat= goldAmountD + silverAmountD + cashD;
+    document.getElementById('total').innerText=totalZakat;">
+    Calculate Zakat</button>
+    <h1 id="total">Your Total Zakat</h1>
+</body>
+</html>

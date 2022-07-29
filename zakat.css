@@ -1,0 +1,12 @@
+*{margin:;    
+}
+
+.h1{background-image: url(zakat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    color:red;
+}
